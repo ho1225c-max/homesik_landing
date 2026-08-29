@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home識 - Smart Living, Better Everyday</title>
+  
+  <!-- Google Fonts: Noto Sans TC -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-black: #111111;
+      --color-cream: #F7F4EF;
+      --color-sage: #8A9484;
+      --color-gold: #B99A63;
+      --color-soft-grey: #E8E3DA;
+      --color-white: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background-color: var(--color-cream);
+      color: var(--color-black);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 24px 16px;
+    }
+
+    .container {
+      max-width: 580px;
+      width: 100%;
+      margin: auto;
+    }
+
+    /* 主卡片容器 */
+    .landing-card {
+      background-color: var(--color-white);
+      border-radius: 20px;
+      padding: 40px 28px;
+      box-shadow: 0 10px 30px rgba(17, 17, 17, 0.04);
+      text-align: center;
+      border: 1px solid var(--color-soft-grey);
+    }
+
+    /* Logo 區塊 */
+    .logo-container {
+      margin-bottom: 24px;
+    }
+
+    .brand-logo {
+      max-width: 150px;
+      height: auto;
+      display: inline-block;
+    }
+
+    /* 標籤徽章 */
+    .badge {
+      display: inline-block;
+      background-color: var(--color-cream);
+      color: var(--color-gold);
+      border: 1px solid var(--color-gold);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 4px 14px;
+      border-radius: 50px;
+      margin-bottom: 18px;
+    }
+
+    /* 標題與標語 */
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--color-black);
+      margin-bottom: 8px;
+      letter-spacing: -0.2px;
+    }
+
+    .tagline-en {
+      font-size: 14px;
+      color: var(--color-sage);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 15px;
+      color: #555555;
+      margin-bottom: 28px;
+      padding: 0 10px;
+    }
+
+    /* 亮點網格 */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .feature-item {
+      background-color: var(--color-cream);
+      border: 1px solid var(--color-soft-grey);
+      padding: 16px 8px;
+      border-radius: 12px;
+    }
+
+    .feature-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--color-black);
+      margin-bottom: 4px;
+    }
+
+    .feature-desc {
+      font-size: 12px;
+      color: #666;
+    }
+
+    /* 主按鈕 CTA */
+    .cta-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      background-color: var(--color-sage);
+      color: var(--color-white);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 16px 24px;
+      border-radius: 12px;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 14px rgba(138, 148, 132, 0.35);
+    }
+
+    .cta-btn:hover {
+      background-color: #798374;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(138, 148, 132, 0.45);
+    }
+
+    .cta-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+      transition: transform 0.2s ease;
+    }
+
+    .cta-btn:hover svg {
+      transform: translateX(4px);
+    }
+
+    /* 頁尾資訊 */
+    .footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 12px;
+      color: #888888;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="landing-card">
+      
+      <!-- 品牌 Logo (請將 src 替換為你的圖片檔名，例如 Home識Logo_1800_1600.png) -->
+      <div class="logo-container">
+        <img src="Home識Logo_1800_1600.png" alt="Home識 Logo" class="brand-logo">
+      </div>
+
+      <!-- 品牌核心價值標籤 -->
+      <div class="badge">智慧生活指南</div>
+
+      <!-- 品牌標語 Slogan -->
+      <h1>識生活｜識選擇｜識提升</h1>
+      <div class="tagline-en">Smart Living, Better Everyday</div>
+
+      <p class="description">
+        探索質感家居、智能家電評測與日常選物靈感。點擊下方專欄，即刻閱讀最新的生活深度筆記。
+      </p>
+
+      <!-- 3 大核心模組 -->
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-title">識生活</div>
+          <div class="feature-desc">質感日常提案</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-title">識選擇</div>
+          <div class="feature-desc">客觀家電評測</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-title">識提升</div>
+          <div class="feature-desc">智慧家居技巧</div>
+        </div>
+      </div>
+
+      <!-- 主要按鈕：導向 Blogger 專欄 (請替換 href 網址) -->
+      <a href="https://hkhomesik.blogspot.com" target="_blank" rel="noopener noreferrer" class="cta-btn">
+        <span>閱讀 Blogger 最新文章</span>
+        <svg viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+    </div>
+
+    <!-- 頁尾宣告 -->
+    <div class="footer">
+      © 2026 Home識. All Rights Reserved.
+    </div>
+  </div>
+
+</body>
+</html>
